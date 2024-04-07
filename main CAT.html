@@ -17,12 +17,12 @@
         <div class="logo">
         <img src="logo.svg" alt="Логотип Котейка">
         </div>
-        <nav class="nav-high">
-            <ul >
-              <li ><a href="#">Почему мы?</a></li>
-              <li ><a href="#">Номера</a></li>
-              <li ><a href="#">Отзывы</a></li>
-              <li ><a href="#">Как нас найти</a></li>
+        <nav class="nav">
+            <ul>
+              <li><a href="#part1">Почему мы?</a></li>
+              <li><a href="#part2">Номера</a></li>
+              <li><a href="#part3">Отзывы</a></li>
+              <li><a href="#part4">Как нас найти</a></li>
             </ul>
           </nav>
     </div>
@@ -31,16 +31,16 @@
         <section class="main-picture">
             <div class="main-picture-content">
                 <div class="main-picture-content-info">
-                    <p>Санкт-петербург</p>
+                    Санкт-петербург
                     <h1>Котейка</h1>
-                    <p>Уютная гостиница для котов и кошек</p>
+                    <p class="main-text">Уютная гостиница для котов и кошек</p>
                     <button class="button-high">Забронировать
                         <img class="buttonimg" src="paw.svg" alt="Забронировать">
                     </button>
                 </div>
             </div>
         </section>
-        <section class="advantages">
+        <section class="advantages"  id="part1">
             <span class="advanteges-title">
             <h2>Почему мы?</h2>
             </span>
@@ -67,7 +67,8 @@
                     <p>Мы приедем за вашим питомцем в любой
                      район Санкт-Петербурга. </p>
                 </div>
-                <br>
+            </div>
+            <div class="card-all">
                 <div class="card">
                     <img class="card-img" src="IconFood.svg" alt="Еда для питомца">
                     <h3>Сбалансированное питание</h3>
@@ -89,7 +90,7 @@
                 </div>
             </div>
         </section>
-        <section class="rooms">
+        <section class="rooms" id="part2">
             <span class="rooms-title">
             <h2>Номера</h2>
             </span>
@@ -99,19 +100,20 @@
                 </div>
                 <div class="room-info">
                     <h3>Эконом плюс</h3>
-                    <ul>
+                    <ul class="room-list">
                        <li>Площадь - 0,90 м<sup><small>2</small></sup></li> 
                        <li>Размеры (ШxГxВ) - 90x100x180 см</li>
                        <li>Цена за сутки: 200&#8381;</li>
                     </ul>
-                    <button class="button-low">Забронировать 
+                    <button class="button-low">
+                       Забронировать
                     <img class="buttonimg" src="paw-rev.svg" alt="Забронировать">
                     </button>
                 </div>
             </div>
             <!--<div class="room">
                 <div class="room-img">
-                    <img src="room1.svg" alt="Комфорт">
+                    <img src="CatRoom2.png" alt="Комфорт">
                 </div>
                 <div class="room-info">
                     <h3>Комфорт</h3>
@@ -127,7 +129,7 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="room1.svg" alt="Сьют">
+                    <img src="CatRoom3.png" alt="Сьют">
                 </div>
                 <div class="room-info">
                     <h3>Сьют</h3>
@@ -140,57 +142,155 @@
                      <img class="buttonimg" src="paw.svg" alt="Забронировать">
                      </button>
                 </div>-->
+            <div class="room-changer">
+                <button class="slider-dot slider-dot-active">
+                    <img src="DotChangeAct.svg" alt="Точка">
+                </button>
+                <button class="slider-dot">
+                    <img src="DotChangeDis.svg" alt="Точка">
+                </button>
+                <button class="slider-dot">
+                    <img src="DotChangeDis.svg" alt="Точка">
+                </button>
             </div>
+            <div class="rooms-arrows">
+                <button class="arr-back">
+                    <img src="leftArrow.png" alt="Назад">
+                </button>
+                <button class="arr-next">
+                    <img src="rightArrow.png" alt="Вперед">
+                </button>
+            </div>
+
         </section>
-        <section class="reviews">
+        <section class="reviews" id="part3">
             <span class="reviews-title">
             <h2>Отзывы</h2>
             </span>
-            <div class="review">
-                <div class="review-img">
-                    <img src="review.png" alt="Отзыв">
+            <div class="review-card">
+                <div class="review">
+                    <div class="review-img">
+                        <img src="review.png" alt="Отзыв">
+                    </div>
+                    <div class="review-info">
+                        <p>Первый раз пришлось оставить нашего котика
+                        в гостинице, очень переживали. Администратор 
+                        Мария каждый день высылала нам фото нашего питомца, 
+                        рассказывала, как он себя чувствует.
+                        И мы и котик остались очень довольны!</p>
+                    </div>
+                    <div class="review-name">
+                        Валерия Гришаева
+                    </div>
+                    <div class="review-date">
+                        15 ноября, 2019
+                    </div>
                 </div>
-                <div class="review-info">
-                    <p>Отзыв</p>
-                    <p></p>
-                    <p>Дата: 20.02.2022</p>
-                </div>  
+                <div class="review">
+                    <div class="review-img">
+                        <img src="review.png" alt="Отзыв">
+                    </div>
+                    <div class="review-info">
+                        <p>Гостиницу для питомцев нам посоветовали друзья. 
+                        Они всегда оставляют здесь своего кота, когда уезжают. 
+                        В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. 
+                        Всем рекомендую! Будем обращаться еще.</p>
+                    </div>
+                    <div class="review-name">
+                        Екатерина Минаева
+                    </div>
+                    <div class="review-date">
+                        10 октября, 2019
+                    </div>  
+                </div>
+                <div class="review">
+                    <div class="review-img">
+                        <img src="review.png" alt="Отзыв">
+                    </div>
+                    <div class="review-info">
+                        <p>Мой кот — настоящая привереда, угодить ему сложно. 
+                        У меня были особые требования к уходу за ним, и “Котейка” отлично 
+                        справились. Я часто наблюдал по видео за питомцем со своего телефона, 
+                        это очень удобно. </p>
+                    </div>
+                    <div class="review-name">
+                        Павел Нечаев
+                    </div>
+                    <div class="review-date">
+                        24 ноября, 2019
+                    </div>
+                </div>
             </div>
-            <div class="review">
-                <div class="review-img">
-                    <img src="review.png" alt="Отзыв">
-                </div>
-                <div class="review-info">
-                    <p>Отзыв</p>
-                    <p></p>
-                    <p>Дата: 20.02.2022</p>
-                </div>  
+            <div class="review-changer">
+                <button class="slider-dot slider-dot-active">
+                    <img src="DotChangeAct.svg" alt="Точка">
+                </button>
+                <button class="slider-dot">
+                    <img src="DotChangeDis.svg" alt="Точка">
+                </button>
+                <button class="slider-dot">
+                    <img src="DotChangeDis.svg" alt="Точка">
+                </button>
             </div>
-            <div class="review">
-                <div class="review-img">
-                    <img src="review.png" alt="Отзыв">
-                </div>
-                <div class="review-info">
-                    <p>Отзыв</p>
-                    <p></p>
-                    <p>Дата: 20.02.2022</p>
-                </div>
+            <div class="reviews-arrows">
+                <button class="arr-back">
+                    <img src="leftArrow.png" alt="Назад">
+                </button>
+                <button class="arr-next">
+                    <img src="rightArrow.png" alt="Вперед">
+                </button>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="part4">
             <div class="contact-info">
                 <span class="contact-title">
                 <h2>Как нас найти</h2>
                 </span>
-                <div class="contact-info">
-                    <p>Контактная информация</p>
-                    <p>+7 (999) 999-99-99</p>
-                    <p>info@cat.com</p>
+                <div>
+                    <h3>Адрес</h3>
+                    <p>Санкт-Петербург, ул Гороховая, д 77</p>
                 </div>
+                <br>
+                <div>
+                    <h3>Режим работы</h3>
+                    <p>Ежедневно с 9:00 до 20:00</p>
+                </div>
+                <br>
+                <div>
+                    <h3>Телефон</h3>
+                    <p>8 (800) 333-55-99</p>
+                </div>
+                <br>                
+                <div>
+                    <h3>E-mail</h3>
+                    <p>info@cat-hotel.ru</p>
+                </div>
+                <br>
+                <div>
+                    <h3>Социальные сети</h3>
+                    <div >
+                        <a class="social-icons" href="https://www.facebook.com/cat">
+                            <img src="facebook.png" alt="Facebook">
+                        </a>
+
+                        <a class="social-icons" href="https://www.instagram.com/cat/">
+                            <img src="instagram.png" alt="Instagram">
+                        </a>
+
+                        <a class="social-icons" href="https://vk.com/cat">
+                            <img src="vk.png" alt="Вконтакте">
+                        </a>
+                    </div>
+                </div>
+
             </div>
             <div class="map">
                 <img src="map.png" alt="Карта">
+                <div class="mapicon">
+                    <a href="https://yandex.ru/maps/-/CCUwf2dDTC"><img src="catIcon.png" alt="Точка карты"></a>
+                </div>
             </div>
+            
         </section>
 </main>
 <footer>
@@ -198,21 +298,24 @@
         <div class="footer-logo">
         <img src="logo.svg" alt="Логотип Котейка">
         </div>
-        <nav class="nav-high">
+        <nav class="nav">
             <ul >
-              <li ><a href="#">Почему мы?</a></li>
-              <li ><a href="#">Номера</a></li>
-              <li ><a href="#">Отзывы</a></li>
-              <li ><a href="#">Как нас найти</a></li>
+                <li><a href="#part1">Почему мы?</a></li>
+                <li><a href="#part2">Номера</a></li>
+                <li><a href="#part3">Отзывы</a></li>
+                <li><a href="#part4">Как нас найти</a></li>
             </ul>
           </nav>
         
     </div>
-    <span class="footer-info">
-        <p>Котейка</p>
-        <p>Уютная гостиница для котов и кошек</p>
-        <p>2022</p>
-    </span>
+    <div class="footer-info">
+        <div class="copyright">
+        <p>&#169; Все права защищены</p>
+        </div>
+        <div class="policy">
+        <a class="policytext" href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
